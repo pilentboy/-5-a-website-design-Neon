@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: "Vazir";
+    list-style: none;
+}
+
+
+@font-face{
+    font-family: "Vazir";
+    src: url(./Font/Vazir-Bold.eot) format("eot");
+}
+
+
+body{
+    overflow-x:hidden;
+    width: 100%;
+
+}
+a{
+    text-decoration: none;
+}
+
+:root{
+    --bGray:rgb(56, 56, 56);
+    --black:rgb(37, 37, 37);
+    --blueBtn:#007bff;
+}
+
+/*---------------------------- HEADER NAV----------------------------*/
+nav{
+    width: 95%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    position: absolute;
+    right: 3%;
+    top: 2%;
+}
+
+#header{
+    display: flex;
+    width: 100%;
+    height:372px;
+    flex-direction: column-reverse;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#neon{
+    color: var(--black);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0px 20px;
+
+}
+
+ul li {
+    margin: 0px 15px;
+    color: gray;
+    font-size: 1rem;
+}
+
+.categries #icon{
+    margin: 0px 12px;
+}
+ul li:hover{
+    color: var(--black);
+
+}
+
+.categries{
+    display: flex;
+    width: 85%;
+}
+
+ul{
+  display:flex;
+  flex-direction: row;
+  width: 85%;
+  height: 100%;
+ 
+}
+
+#toggle a{
+    color: gray;
+    font-size: 1rem;
+}
+#toggle a:hover{
+    color: var(--black);
+}
+
+#signup_right{
+    display: none;
+    color: gray;
+    font-size: 1rem;
+}
+#signup_right:hover{
+	color: var(--black);
+}
+
+/* toggle*/
+.navbar-toggler-icon{
+    border: 1px solid rgb(182, 172, 172);
+    border-radius: 5px;
+    width: 55px;
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+
+}
+.navbar-toggler-icon i{
+    font-size: 2.3rem;
+    color: gray;
+    margin-top: 5px;
+  
+}
+
+
+ /* RESPONSIVE */
+
+ @media only screen and (max-width:767px) {
+    .navbar-toggler-icon{
+       
+        display: flex;
+
+    }
+
+
+    #signup{
+        display: none;
+    }
+
+
+    nav ul{
+        flex-direction: column;
+        display: none;
+        margin-top: 5px;
+    }
+
+  
+	
+
+    ul li{
+        margin-bottom: 5px ;
+    }
+
+    #neon{
+        margin-bottom: 5px ;
+    }
+
+    .categries{
+        flex-direction: column;
+    }
+    
+    nav{
+        align-items: flex-start;
+    }
+  
+	
+	
+   
+}
+
+.cover_effect{
+    animation-name: cover_anime;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards  ;
+    width: 100%;
+    height: 320px;
+    position: relative;
+}
+
+@keyframes cover_anime {
+    from{top:0%}
+    to{top:42%}
+}
+
+.cover_effect span{
+    width: 100%;
+    height: 100%;
+    font-size:2.5rem;
+    color: white;
+    position: absolute;
+    top:35%;
+    right:40%;
+    text-shadow:10px 10px  10px rgb(255, 255, 255);
+}
+
+/*---------------------------- HEADER IMAGE----------------------------*/
+.cover{
+    width: 100%;
+    height: 320px;
+    position: relative;
+}
+
+.bg{
+    width: 100%;
+    height: 302px;
+    background-image: url(./image/code.jfif);
+    background-size: cover;
+    filter: blur(2px);
+}
+
+.cover{
+    animation-name: cover_anime1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards  ;
+    width: 100%;
+    height: 320px;
+    position: relative;
+}
+@keyframes cover_anime1 {
+    from{top:30%}
+    to{top:0%}
+}
+
+
+.cover span{
+    width: 100%;
+    height: 100%;
+    font-size:2.5rem;
+    color: white;
+    position: absolute;
+    top:35%;
+    right:40%;
+    animation-duration: 2s;
+    text-shadow:10px 10px  10px rgb(255, 255, 255);
+}
+
+
+/* ----------------------------SECTION  SEARCH ----------------------------*/
+#sec1{
+    width: 100%;
+    height: 80px;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.container1{
+    height: 100%;
+    width: 80%;
+    background-color: white;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+	flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search{
+    display:flex;
+    flex-direction: row;
+    width: 250px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    justify-content: space-between;
+
+}
+.search .search_box input{
+    width: 110%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.search_btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    color: white;
+    cursor: pointer;
+    height: 100%;
+   
+    background-color: rgb(15, 128, 189);
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.categories_list{
+ 
+}
+
+/* ----------------------------SECTION 2 course card ----------------------------*/
+#sec2{
+    width: 100%;
+    margin-top: 15px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.card{
+    align-content: center;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card .item{
+    margin-bottom:15px;
+    width: 350px;
+    border-radius: 5px;
+    height: 360px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.card .item img{
+    width: 100%;
+    height: 60%;
+}
+
+.title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+
+}
+
+.time{
+    width: 100%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    color: gray;
+}
+
+.desc{
+    color: gray;
+    font: 1rem;
+    font-weight: bold;
+    margin-right: 5%;
+
+}
+
+/* ----------------------------SECTION 3 next page buttons ----------------------------*/
+#sec3{
+    width: 100%;
+    min-height:7vh;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#sec3 a{
+    border: 0.7px solid rgb(187, 184, 184);
+    width: 35px;
+    height: 35px;
+    color: var(--blueBtn);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec3 #firstP{
+    background-color:var(--blueBtn);
+    color: #fff;
+    
+}
+
+#sec3 #next{
+    border-radius: 0px 5px 5px 0px;
+}
+#sec3 #previus{
+    border-radius: 5px 0px 0px 5px;
+}
+
+#next:hover{
+    background-color: black;
+}
+#previus:hover{
+    background-color: black;
+}
+
+

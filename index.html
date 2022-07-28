@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fourth</title>
+
+    <!-- Icon -->
+    <link rel="icon" href="./image/neon_icon.png">
+
+    <!-- css and cdns-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+    
+        <!---------------------------- HEADER PART---------------------------->
+        <header id="header">
+
+            <nav>
+                <div class="categries">
+                    <a href="#"><li id="neon">نئون</li></a>
+                    <ul id="show_categorie">
+                        <a href="#"><li>دوره های آموزشی</li></a>
+                        <a href="#"><li>پست ها </li></a>
+                        <a href="#"><li>تی وی</li></a>
+                        <a href="#"><li>کانال تلگرام</li></a>
+                        <a href="#" id="signup_right">ثبت نام / ورود</a>
+    
+                    </ul>
+                </div>
+               
+                
+                <div id="toggle">
+                    <a href="#" id="signup">ثبت نام / ورود</a>
+                    
+                    <div class="navbar-toggler-icon" 
+                    onclick="showCategories()"
+                    >
+                        <i class="bi bi-list"></i>
+                    </div>
+
+                </div>  
+
+            </nav>
+            <!---------------------------- HEADER IMAGE---------------------------->
+
+            <div class="cover">
+                <div class="bg">
+
+                </div>
+                <span>دوره های آموزشی</span>
+
+            </div>    
+            
+        </header>
+        <!---------------------------- SECTION 1  SEARCH ---------------------------->
+        <section id="sec1">
+            <div class="container1">
+                <form class="search" action="http://www.neonlearn.ir">
+                <div class="search item_s">
+                    <div class="search_box">
+                        <input type="text">
+                    </div>
+                    <div class="search_btn">
+                      <button type="submit">جستجو</button> 
+                    </div>
+                </form>
+                </div>
+           
+                <div class="categories_list item_s">
+                    <select name="categor">
+                        <option value="volvo">دسته بندی</option>
+                        <option value="saab">طراحی وب</option>
+                        <option value="mercedes">هوش مصنوعی</option>
+                        <option value="audi">زبان تخصصی</option>
+                      </select>
+                </div>
+                <div class="categoriesall item_s">
+                    <select name="categor">
+                        <option value="volvo">همه</option>
+                        <option value="saab"> crash course</option>
+                        <option value="saab"> master course</option>
+
+                      </select>
+                </div>
+            </div>
+        </section>
+        
+    
+    <!---------------------------- SECTION  2 Course Card ---------------------------->
+        <section id="sec2">
+            <div class="card">
+                <a href="#"> <div class="item">
+                    <img src="./image/course_img.jpg" alt="">
+                    <span class="title">دوره پیشرفته React</span>
+                    <span class="desc"> دوره پیشرفته به همراه آپدیت و پشتیبانی بدون محدودیت</span>
+                    <div class="time">
+                        <span>15 ساعت و 6 دقیقه </span>
+                    </div>
+                </div>
+               </a>
+			   
+			    <a href="#">
+                <div class="item">
+                    <img src="./image/course_img6.jpg" alt="">
+                    <span class="title">دوره پیشرفته React</span>
+                    <span class="desc"> دوره پیشرفته به همراه آپدیت و پشتیبانی بدون محدودیت</span>
+                    <div class="time">
+                        <span>15 ساعت و 6 دقیقه </span>
+                    </div>
+                </div>
+				</a>
+				
+                <a href="#">
+                <div class="item">
+                    <img src="./image/course_img4.jpg" alt="">
+                    <span class="title">دوره پیشرفته React</span>
+                    <span class="desc"> دوره پیشرفته به همراه آپدیت و پشتیبانی بدون محدودیت</span>
+                    <div class="time">
+                        <span>15 ساعت و 6 دقیقه </span>
+                    </div>
+                </div>
+				</a>
+				
+                <a href="#">
+                <div class="item">
+                    <img src="./image/course_img2.jpg" alt="">
+                    <span class="title">دوره پیشرفته React</span>
+                    <span class="desc"> دوره پیشرفته به همراه آپدیت و پشتیبانی بدون محدودیت</span>
+                    <div class="time">
+                        <span>15 ساعت و 6 دقیقه </span>
+                    </div>
+                </div>
+				</a>
+				
+                <a href="#">
+                <div class="item">
+                    <img src="./image/course_img6.jpg" alt="">
+                    <span class="title">دوره پیشرفته React</span>
+                    <span class="desc"> دوره پیشرفته به همراه آپدیت و پشتیبانی بدون محدودیت</span>
+                    <div class="time">
+                        <span>15 ساعت و 6 دقیقه </span>
+                    </div>
+                </div>
+				</a>
+				
+                <a href="#">
+                <div class="item">
+                    <img src="./image/course_img5.jpg" alt="">
+                    <span class="title">دوره پیشرفته React</span>
+                    <span class="desc"> دوره پیشرفته به همراه آپدیت و پشتیبانی بدون محدودیت</span>
+                    <div class="time">
+                        <span>15 ساعت و 6 دقیقه </span>
+                    </div>
+                </div>
+				</a>
+				
+                <a href="#">
+                <div class="item">
+                    <img src="./image/course_img4.jpg" alt="">
+                    <span class="title">دوره پیشرفته React</span>
+                    <span class="desc"> دوره پیشرفته به همراه آپدیت و پشتیبانی بدون محدودیت</span>
+                    <div class="time">
+                        <span>15 ساعت و 6 دقیقه </span>
+                    </div>
+                </div>
+				</a>
+				
+                <a href="#">
+                <div class="item">
+                    <img src="./image/course_img.jpg" alt="">
+                    <span class="title">دوره پیشرفته React</span>
+                    <span class="desc"> دوره پیشرفته به همراه آپدیت و پشتیبانی بدون محدودیت</span>
+                    <div class="time">
+                        <span>15 ساعت و 6 دقیقه </span>
+                    </div>
+                </div>
+				</a>
+				
+                <a href="#">
+                <div class="item">
+                    <img src="./image/course_img2.jpg" alt="">
+                    <span class="title">دوره پیشرفته React</span>
+                    <span class="desc"> دوره پیشرفته به همراه آپدیت و پشتیبانی بدون محدودیت</span>
+                    <div class="time">
+                        <span>15 ساعت و 6 دقیقه </span>
+                    </div>
+                </div>
+               </a>
+              
+                
+                
+        
+            </div>
+        
+            
+        </section>
+        
+
+     <!---------------------------- SECTION  3 fotter ---------------------------->
+        <section id="sec3">
+
+            <a href="index2.html" id="next" title="صفحه بعد" target="_blank"><i class="bi bi-caret-right-fill"></i></a>
+            <a href="#"  id="secondP" >2</a>
+            <a href="#" id="firstP" >1</a>
+            <a href="index.html" id="previus" title="صفحه قبل" target="_blank"><i class="bi bi-caret-left-fill"></i></a>
+
+        </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
